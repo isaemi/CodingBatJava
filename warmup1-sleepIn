@@ -7,7 +7,7 @@ sleepIn(false, true) → true
 */
 
 
-public boolean sleepIn(boolean weekday, boolean vacation) {
+public boolean warmup1-sleepIn(boolean weekday, boolean vacation) {
   if (!weekday || vacation)
   {
     return true;
