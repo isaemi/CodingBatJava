@@ -5,7 +5,7 @@ monkeyTrouble(false, false) → true
 monkeyTrouble(true, false) → false
 */
 
-public boolean Warmup1-monkeyTrouble(boolean aSmile, boolean bSmile) {
+public boolean warmup1-monkeyTrouble(boolean aSmile, boolean bSmile) {
   if ((aSmile && bSmile) || (!aSmile && !bSmile))
   {
     return true;
