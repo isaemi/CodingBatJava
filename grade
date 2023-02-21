@@ -1,0 +1,18 @@
+public class grade {
+
+	public static void main(String[] args) {
+		int grade = 91;
+		
+		if(grade>=90)
+			System.out.println("You've got A");
+		else if(grade>=80)
+			System.out.println("You've got B");
+		else if(grade>=70)
+			System.out.println("You've got C");
+		else if(grade>=60)
+			System.out.println("You've got D");
+		else
+			System.out.println("You've got F");
+	}
+
+}
