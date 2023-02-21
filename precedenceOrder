@@ -1,0 +1,19 @@
+public class precedenceOrder {
+
+	public static void main(String[] args) {
+		short x,y,a,b;
+		x=23;
+		y=(short) (x%5);
+		a=b=1667;
+		System.out.println(x+y%9);
+		System.out.println(x/y%9);
+		System.out.println(x<6 && y*23>234);
+		System.out.println(x<6 || y*23>234);	
+		System.out.println(a--==b++);
+		System.out.println(1<<31);
+		System.out.println(8&7);
+		System.out.println(8^7);
+		System.out.println(8|7);
+	}
+
+}
