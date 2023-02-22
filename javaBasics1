@@ -1,0 +1,54 @@
+/**
+ * @author	Saemi Park
+ * @course	CPSC1181
+ * @date	02/21/2023
+ */
+public class javaBasics1 {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
+
+		System.out.println("The minimum value of a byte data type is " + Byte.MIN_VALUE);
+		System.out.println("The maximum value of a byte data type is " + Byte.MAX_VALUE);
+		System.out.println("The minimum value of a char data type is " + (int)Character.MIN_VALUE);
+		System.out.println("The maximum value of a char data type is " + (int)Character.MAX_VALUE);
+		System.out.println("The minimum value of a short data type is " + Short.MIN_VALUE);
+		System.out.println("The maximum value of a short data type is " + Short.MAX_VALUE);
+		System.out.println("The minimum value of a int data type is " + Integer.MIN_VALUE);
+		System.out.println("The maximum value of a int data type is " + Integer.MAX_VALUE);
+		System.out.println("The minimum value of a long data type is " + Long.MIN_VALUE);
+		System.out.println("The maximum value of a long data type is " + Long.MAX_VALUE);
+		System.out.println("The minimum value of a float data type is " + Float.MIN_VALUE);
+		System.out.println("The maximum value of a float data type is " + Float.MAX_VALUE);
+		System.out.println("The minimum value of a double data type is " + Double.MIN_VALUE);
+		System.out.println("The maximum value of a double data type is " + Double.MAX_VALUE);
+
+		System.out.println("The size of a byte data type is " + Byte.SIZE + " bits");
+		System.out.println("The size of a char data type is " + Character.SIZE + " bits");
+		System.out.println("The size of a short data type is " + Short.SIZE + " bits");
+		System.out.println("The size of a integer data type is " + Integer.SIZE + " bits");
+		System.out.println("The size of a long data type is " + Long.SIZE + " bits");
+		System.out.println("The size of a float data type is " + Float.SIZE + " bits");
+		System.out.println("The size of a double data type is " + Double.SIZE + " bits");
+
+		int x = 1181;
+		// Automatic Widening casting: int to double
+		double y = x;
+		System.out.printf("|(x,y)=(%d,%.2f).\n", x,y);
+		// output  | (x,y)=(1181, 1181.00)
+		double z = 3.14;
+		// Manual Narrowing casting: double to byte
+		byte w = (byte) z;
+		System.out.printf("| (z,w)=(%.2f,%d).\n", z,w);
+		// output  | (z,w)=(3.14,3)
+
+		short a = 13; // as binary 0000000000001101=13
+		//right-shift x by 3 bits
+		a = (short) (a>>3);
+		System.out.println(a);
+		a = (short) (a<<5);
+		System.out.println(a);
+	}
+
+}
