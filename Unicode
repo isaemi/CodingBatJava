@@ -1,0 +1,12 @@
+public class Unicode {
+
+	public static void main(String[] args) {
+		int size = (int)Math.pow(2, 10);
+		int [] unicodes = new int[size];
+		for (int i=0;i<size;++i)
+			unicodes[i]=i;
+		for (int code : unicodes)
+			System.out.printf("\tUnicode(%d) -> Character (%c_\n,", code, (char)code);
+	}
+
+}
