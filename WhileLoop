@@ -1,0 +1,13 @@
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		int counter = 1;
+		while(counter !=Math.pow(2,8))
+		{
+			System.out.println("Counter is: " + counter);
+			counter*=2;
+		}
+
+	}
+
+}
