@@ -1,0 +1,27 @@
+public class WhatIsOutput {
+
+	public static void main(String[] args) {
+		String s = new String("Java Tester");
+		int counter = 1;
+		do {
+			function(s);
+			System.out.println();
+			counter *= 9;
+		} while (counter < 81);
+
+	}
+
+	public static void function(String s)
+	{
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			if(i%3==0)
+				System.out.print("#");
+			else if(Character.isWhitespace(s.charAt(i)))
+			break;
+			else
+				System.out.print(Character.toUpperCase(s.charAt(i)));;
+		}
+	}
+
+}
