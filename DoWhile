@@ -1,0 +1,26 @@
+public class DoWhile {
+
+	public static void main(String[] args) {
+		String s = "How Do You Rate This Course?";
+		int counter=1;
+		do
+		{
+			function(s);
+			System.out.println();
+			counter*=9;
+		}
+		while(counter<81);
+
+	}
+
+	private static void function(String s) 
+	{
+		for(int i=0;i<s.length();i++)
+		{
+			if(Character.isWhitespace(s.charAt(i)))
+				break;
+			System.out.print(s.charAt(i));
+		}
+	}
+
+}
