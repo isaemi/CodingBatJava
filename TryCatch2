@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class TryCatch2 {
+
+	public static void main(String[] args) 
+	{
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter an integer:");
+		try 
+		{
+			int x = keyboard.nextInt();
+		}
+		catch(InputMismatchException imex)
+		{
+			System.out.println("You should enter an integer!");
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+		finally
+		{
+			System.out.println("Exiting the program");
+			keyboard.close();
+		}
+	}
+
+}
