@@ -1,0 +1,11 @@
+public class TestingCar {
+
+	public static void main(String[] args)
+	{
+		Car car1 = new Car();
+		System.out.println("Car 1:\n" + car1.toString());
+		Car car2 = new Car();
+		System.out.println("Car2:\n"+ car2.toString());
+	}
+
+}
