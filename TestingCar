@@ -6,6 +6,9 @@ public class TestingCar {
 		System.out.println("Car 1:\n" + car1.toString());
 		Car car2 = new Car();
 		System.out.println("Car2:\n"+ car2.toString());
+		Car car3 = new Car("Range Rover", "HSE", (short)2020, (short)3000);
+		//Use the dot operator to access
+		System.out.println("The model of car is "+ car3.getModel());
 	}
 
 }
