@@ -1,0 +1,28 @@
+public enum Coin {
+	/*public static final double PENNY = .01;
+	public static final double NICKLE = 0.05;
+	public static final double DIME = 0.10;
+	public static final double QUARTER = 0.25;
+	public static final double FIFTY_CENT = 0.5;
+	public static final double DOLLAR = 1.0;
+	*/
+	
+	PENNY(.01), NICKLE(.05), DIME(.10), QUARTER(.25), FIFTY_CENT(.50), DOLLAR(1.0);
+	
+	// Read-Only Data Member
+	private double value;
+	//Private constructor
+	private Coin(double value)
+	{
+		this.value = value;
+	}
+	// Read-Only
+	public double getValue()
+	{
+		return value;
+	}
+	public static void main(String[] args) {
+	
+	}			
+
+}
