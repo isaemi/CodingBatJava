@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class inheritance {
+
+	public static void main(String[] args) {
+		int a = 155;
+		int b = a;
+		a++;
+		//What is the output?
+		System.out.printf("(a,b)=(%d,%d) after incrementing a\n", a, b);
+
+		ArrayList<String> list1 = new ArrayList<String>();
+		// Adding items to list1
+		list1.add("Apple");
+		list1.add("Banana");
+		list1.add("Orange");
+		// Assigning list1 to list2
+		ArrayList<String> list2 = list1;
+		// Adding new item to list2
+		list2.add("Kiwi");
+		// What is the output?
+		System.out.printf("List1 = %s\n", list1);
+		System.out.printf("List2 =%s\n", list2);
+	}
+
+}
