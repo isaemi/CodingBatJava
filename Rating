@@ -1,0 +1,21 @@
+public enum Rating {
+		POOR(1), FAIR(2), GOOD(3), VERY_GOOD(4), EXCELLENT(5);
+	
+	// Read-only Data Member
+	private int value;
+	// Private Constructor
+	private Rating(int value)
+	{
+		this.value = value;
+	}
+	// Read-only
+	public int getValue()
+	{
+		return value;
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}
