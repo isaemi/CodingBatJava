@@ -1,0 +1,79 @@
+public class Car
+	{
+		/** Data Members */
+		// Class variable
+		protected static int numberOfCars=0;
+		//Instance variable
+		protected String make;
+		protected String model;
+		protected short year;
+		protected short mileage;
+	
+		// Methods
+		/** Constructors */
+		//Default Constructor
+		Car()
+		{
+			this.make="NA";
+			this.model="NA";
+			this.year=(short)-1;
+			this.mileage=(short)-1;
+		}
+		
+		// Constructor with 4 parameters
+		Car (String make, String model, short year, short mileage)
+		{
+			this.make=make;
+			this.model=model;
+			this.year=year;
+			this.mileage=mileage;
+		}
+		
+		// Getter Methods
+		public String getMake()
+		{
+			return this.make;
+		}
+		public String getModel()
+		{
+			return this.model;
+		}
+		public short getYear()
+		{
+			return this.year;
+		}
+		public short getMileage()
+		{
+			return this.mileage;
+		}
+		
+		// Setter Methods
+		public void setMake(String make)
+		{
+			this.make=make;
+		}
+		public void setModel(String model)
+		{
+			this.model=model;
+		}
+		public void setYear(short year)
+		{
+			this.year=year;
+		}
+		public void setMileage(short mileage)
+		{
+			this.mileage=mileage;
+		}
+		
+		// toString Method
+		public String toString()
+		{
+			return "Car make: " + this.make + "\nCar model: " + this.model +
+					"\nCar year: " + this.year + "\nMileage: " + this.mileage;
+		}
+
+
+	public static void main(String[] args) {
+
+
+	}
