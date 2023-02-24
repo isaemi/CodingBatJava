@@ -1,0 +1,32 @@
+public class TaylorSin extends JavaSin
+{
+	public double computeSin(double x)
+	{
+		double result=0.0;
+		for (int k=0;k<10;k++)
+		{
+			double term=Math.pow(-1,k)*Math.pow(x, 2*k+1)/factorial(2*k+1);
+			result+=term;
+		}
+		return result;
+	}
+
+	private double factorial(int n)
+	{
+		long result=1L;
+		for(int i=1;i<=n;i++)
+			result*=i;
+		return result;
+	}
+	/* OR
+	 * 
+	 * 	private long factorial(int n)
+	 * 	{
+	 * 		if(n==0)
+	 * 			return 1L;
+	 * 		else
+	 * 			return n*factorial(n-1);
+	 * 	}
+	 */
+
+}
