@@ -1,0 +1,6 @@
+public class JavaSin extends Sin{
+	public double computeSin(double x)
+	{
+		return Math.sin(x);
+	}
+}
