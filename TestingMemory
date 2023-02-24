@@ -1,0 +1,13 @@
+import java.awt.Point;
+
+public class TestingMemory {
+
+	public static void main(String[] args) {
+		double y=Math.PI;
+		String s="Burnaby Mountain";
+		Object location=new Point();
+		int x=123;
+
+	}
+
+}
