@@ -1,0 +1,6 @@
+public class MyCalendar {
+	enum Day
+	{
+		MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+	}
+}
