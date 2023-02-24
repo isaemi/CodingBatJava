@@ -1,0 +1,13 @@
+public class SimpleEncryption implements Encryption
+	{
+	public String encrypt(String clearText)
+	{
+		return clearText;
+		
+	}
+	public String decrypt(String cipherText)
+	{
+		return cipherText;
+		
+	}
+}
