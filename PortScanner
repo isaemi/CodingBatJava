@@ -1,0 +1,7 @@
+import java.net.*;
+
+public class PortScanner
+{
+	protected InetAddress targetIp;
+
+}
