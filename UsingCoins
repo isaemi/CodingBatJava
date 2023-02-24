@@ -1,0 +1,12 @@
+public class UsingCoins {
+
+	public static void main(String[] args) {
+		Coin[] coins = Coin.values();
+		for (Coin c: coins)
+		{
+			System.out.printf("\t|%s->%f\n",c.name(),c.getValue());
+		}
+
+	}
+
+}
