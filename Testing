@@ -1,0 +1,11 @@
+public class Testing {
+
+	public static void main(String[] args) {
+		Testing test = new Testing();
+		System.out.printf("Class=%s\n",test.getClass());
+		System.out.printf("Hash Code=%d\n", test.hashCode());
+		System.out.printf("String Representation=%s\n",test.toString());
+
+	}
+
+}
