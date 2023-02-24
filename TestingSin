@@ -1,0 +1,13 @@
+public class TestingSin {
+
+	public static void main(String[] args)
+	{
+		JavaSin app1,app2;
+		app1=new JavaSin();
+		app2=new TaylorSin();
+		System.out.printf("The value of sin (PI/2) is %.5f\n",app1.computeSin(Math.PI/2), args);
+		System.out.printf("The value of sin (PI/2) is %.5f\n",app2.computeSin(Math.PI/2));
+
+	}
+
+}
