@@ -1,0 +1,5 @@
+enum RGB {RED,GREEN,BLUE}
+public class GUI
+{
+	private RGB background = RGB.GREEN;
+}
