@@ -1,0 +1,26 @@
+import java.io.File;
+import java.io.IOException;
+public class UsingIO2 {
+
+	public static void main(String[] args) throws Exception{
+		try
+		{
+		File myFile = new File("io.pdf");
+		if(!myFile.exists())
+		{
+			boolean isCreated = myFile.createNewFile();
+			System.out.printf("New file <<%s>> has been created in <<%s>>.", myFile.getName(), myFile.getAbsolutePath());
+		}
+		else
+		{
+			System.out.printf("The <<%s>> already exists in <<%s>>.", myFile.getName(), myFile.getAbsolutePath());
+		}
+
+	}
+		catch(IOException ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+
+}
