@@ -1,0 +1,3 @@
+public abstract class Sin {
+	public abstract double computeSin(double x);
+}
