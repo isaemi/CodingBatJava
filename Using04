@@ -1,0 +1,27 @@
+import java.io.File;
+import java.lang.Exception;
+public class UsingIO4 {
+
+	public static void main(String[] args) {
+		try
+		{
+			File dir = new File(".");
+			String[] list = dir.list();
+			System.out.printf("\tThe content of the current directory <<%s>>(<<.>>))", 
+					dir.getAbsolutePath(), args);
+			for(int i=0;i<list.length;++i)
+				System.out.printf("\t}%s\n",list[i]);
+			dir = new File("..");
+			list = dir.list();
+			System.out.printf("\t|----------------------------------------\n");
+			System.out.printf("\t|The content of the parent directory <<%s>>(<<..>>)", 
+					dir.getAbsolutePath());
+				for (int i=0; i<list.length;++i)
+					System.out.printf("\t|%s\n",list[i]);
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+}
