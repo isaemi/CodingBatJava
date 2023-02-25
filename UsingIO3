@@ -1,0 +1,26 @@
+import java.io.File;
+
+public class UsingIO3 {
+
+	public static void main(String[] args){
+		try
+		{
+		File myDirectory = new File("io");
+		if(!myDirectory.exists())
+		{
+			boolean isCreated = myDirectory.mkdir();
+			System.out.printf("New directory <<%s>> has been created in <<%s>>.", myDirectory.getName(), myDirectory.getAbsolutePath());
+		}
+		else
+		{
+			System.out.printf("The <<%s>> already exists in <<%s>>.", myDirectory.getName(), myDirectory.getAbsolutePath());
+		}
+
+	}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+
+}
